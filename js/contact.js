@@ -13,7 +13,7 @@ const fromValidated = document.querySelector("#validateForm")
 function validateForm(event) {
     event.preventDefault();
 
-    if(checkLenght(fullName.value, 1) === true) {
+    if(checkLenght(fullName.value, 0) === true) {
         fullNameError.style.display = "none";
     } else {
         fullNameError.style.display = "block";
